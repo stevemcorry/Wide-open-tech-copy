@@ -18,6 +18,10 @@ header {
   position: fixed;
   height: 100px;
 }
+header:hover {
+  background: white;
+  height: 80px;
+}
 .navBar {
   display: flex;
   height: 100%;
@@ -102,7 +106,7 @@ header {
   letter-spacing: 1px;
   align-items: center;
 }
-.learnMore{
+.learnMore, .contactUs{
   width: 177px;
   height: 48px;
   border: none;
@@ -119,18 +123,168 @@ header {
   }
 /*How it works section*/
 .penScrew {
-  background-image: url(http://wideopentech.com/themes/wot-2013-gm/_/img/xsprite_home.png.pagespeed.ic.0GW0OMTdt-.webp);
+  background-image: url(img/sprite_home.png);
   background-position: -22px -113px;
   width: 75px;
   height: 75px;
-  margin: 0 auto;
+  margin-top: 35px;
+}
+.howItWorks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .howItWorks p{
   font-family: 'Open Sans';
-  color: rgb(106, 106, 106);
-  font-weight: 400;
-  font-size: 24px;
+  color: #6a787c;
+  font-weight: 350;
+  font-size: 25px;
   line-height: 36px;
   text-align: center;
-  margin: 30px 10px;
+  margin: 0px 10px;
+  margin-top: 30px;
+}
+.howItWorks span {
+  font-family: oswald;
+  color: gray;
+  font-size: 42px;
+  font-weight:300;
+  margin: 17px 0px 40px 0px;
+}
+/*threePic*/
+.threePic{
+  display: flex;
+  background: white;
+  height: 548px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.services, .company, .otherWork {
+  background: white;
+  height: 500px;
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 28px;
+  font-size: 18px;
+}
+.line {
+  width: 1px;
+  background: lightgrey;
+  height: 450px;
+  display: flex;
+  align-self: center;
+}
+.bulb, .arrow, .power {
+  background-image: url(img/sprite_home.png);
+  width: 131px;
+  height: 160px;
+  background-position: -308px , 0px;
+}
+.lilArrow {
+  background-image: url(img/sprite_home.png);
+  background-position: -46px -292px;
+  height: 30px;
+  width: 27px;
+}
+.arrow {
+  background-position: -210px, 0px;
+  width: 100px;
+}
+.power {
+  background-position: -97px, 0px;
+  width: 125px;
+}
+.describe {
+  font-family: open sans;
+  letter-spacing: .3px;
+  color: #97a2a7;
+  text-align: center;
+  font-size: 18px;
+}
+.services a, .company a, .otherWork a {
+  color: #bcd436;
+  font-family: open sans;
+  letter-spacing: .3px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+/*How can we help*/
+.howWeHelp {
+  height: 687px;
+}
+.howWeHelp p {
+  font-family: oswald;
+  font-size: 42px;
+  font-weight: 300;
+  margin-top: 36px;
+  color: rgb(99, 99, 99);
+  text-align: center;
+  margin-bottom: 0px;
+}
+.howWeHelp .helpme {
+  font-family: helvetica;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #40666d;
+  font-size: 22px;
+  margin: 5px 0 50px;
+  text-align: center;
+}
+.boxes {
+  font-size: 24px;
+  line-height: 1.428571429;
+  font-family: open sans;
+  font-weight: 500;
+  color: #40666d;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+.box1 *, .box2 *{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+
+}
+.box2 *{
+  padding: 18px 5px 18px 5px;
+  margin: 10px 0px 10px 0px;
+
+}
+.box1, .box2  {
+display: flex;
+flex-direction: column;
+height: 460px;
+justify-content: space-between;
+}
+.smallTxt {
+  font-size: 16px;
+  color: #858585;
+  display: block;
+  margin-top: 0px;
+}
+.contactUs {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+/*Companies we work with*/
+.companiesWeWork {
+  height: 567px;
+  background: white;
+}
+.companiesTitle {
+  font-size: 42px;
+    font-weight: 300;
+    color: #6a787c;
+     font-family: 'Oswald';
+     text-align: center;
+     padding: 25px;
 }
